@@ -696,12 +696,9 @@ KBUILD_CFLAGS	+= $(call cc-disable-warning, int-in-bool-context)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, address-of-packed-member)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, attribute-alias)
 # Disable noisy GCC 9.1 / Clang warnings
-KBUILD_CFLAGS	+= $(call cc-disable-warning, tautological-compare)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, misleading-indentation)
-KBUILD_CFLAGS	+= $(call cc-disable-warning, array-bounds)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, sizeof-pointer-memaccess)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, switch-unreachable)
-KBUILD_CFLAGS	+= $(call cc-disable-warning, duplicate-decl-specifier)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, logical-not-parentheses)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, memset-elt-size)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, pointer-compare)
@@ -775,15 +772,6 @@ endif
 
 KBUILD_CFLAGS += $(call cc-ifversion, -lt, 0409, \
 			$(call cc-disable-warning,maybe-uninitialized,))
-
-KBUILD_CFLAGS += $(call cc-ifversion, -lt, 0409, \
-			$(call cc-disable-warning,maybe-uninitialized,))
-
-KBUILD_CFLAGS += $(call cc-ifversion, -gt, 0900, \
-			$(call cc-option, -Wno-psabi) \
-			$(call cc-disable-warning,maybe-uninitialized,) \
-			$(call cc-disable-warning,format,) \
-			$(call cc-disable-warning,array-bounds,))
 
 ifeq ($(cc-name),clang)
 ifdef CONFIG_LLVM_POLLY
