@@ -62,12 +62,20 @@ int gpexbe_clock_get_rate_asv_table(struct freq_volt *fv_array, int level_num)
 	return ret;
 }
 
+<<<<<<< HEAD
 int gpexbe_clock_get_boot_freq(void)
+=======
+int gpexbe_clock_get_boot_freq()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return pm_info.boot_clock;
 }
 
+<<<<<<< HEAD
 int gpexbe_clock_get_max_freq(void)
+=======
+int gpexbe_clock_get_max_freq()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return pm_info.max_clock_limit;
 }
@@ -77,12 +85,20 @@ int gpexbe_clock_set_rate(int clk)
 	return cal_dfs_set_rate(cal_id, clk);
 }
 
+<<<<<<< HEAD
 int gpexbe_clock_get_rate(void)
+=======
+int gpexbe_clock_get_rate()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return cal_dfs_get_rate(cal_id);
 }
 
+<<<<<<< HEAD
 int gpexbe_clock_init(void)
+=======
+int gpexbe_clock_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	cal_id = gpexbe_devicetree_get_int(g3d_cmu_cal_id);
 
@@ -97,7 +113,11 @@ int gpexbe_clock_init(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpexbe_clock_term(void)
+=======
+void gpexbe_clock_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	cal_id = 0;
 	pm_info.boot_clock = 0;

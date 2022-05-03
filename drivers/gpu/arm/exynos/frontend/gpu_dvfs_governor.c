@@ -31,7 +31,11 @@
 static struct dvfs_info *dvfs;
 
 /* TODO: This should be moved to DVFS module */
+<<<<<<< HEAD
 int gpex_dvfs_set_clock_callback(void)
+=======
+int gpex_dvfs_set_clock_callback()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	unsigned long flags;
 	int level = 0;

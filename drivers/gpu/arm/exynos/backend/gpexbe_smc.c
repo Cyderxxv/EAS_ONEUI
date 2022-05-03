@@ -41,7 +41,11 @@ struct _smc_info {
 
 static struct _smc_info smc_info;
 
+<<<<<<< HEAD
 int gpexbe_smc_protection_enable(void)
+=======
+int gpexbe_smc_protection_enable()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	int err;
 	unsigned long flags;
@@ -68,7 +72,11 @@ int gpexbe_smc_protection_enable(void)
 	return err;
 }
 
+<<<<<<< HEAD
 int gpexbe_smc_protection_disable(void)
+=======
+int gpexbe_smc_protection_disable()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	int err;
 	unsigned long flags;
@@ -104,20 +112,35 @@ int gpexbe_smc_protection_disable(void)
 #define SMC_DRM_G3D_POWER_ON SMC_DRM_G3D_PPCFW_RESTORE
 #endif
 
+<<<<<<< HEAD
 void gpexbe_smc_notify_power_on(void)
+=======
+void gpexbe_smc_notify_power_on()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	exynos_smc(SMC_DRM_G3D_POWER_ON, 0, 0, 0);
 }
 
+<<<<<<< HEAD
 void gpexbe_smc_notify_power_off(void)
+=======
+void gpexbe_smc_notify_power_off()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	exynos_smc(SMC_DRM_G3D_POWER_OFF, 0, 0, 0);
 }
 #else
+<<<<<<< HEAD
 void gpexbe_smc_notify_power_on(void)
 {
 }
 void gpexbe_smc_notify_power_off(void)
+=======
+void gpexbe_smc_notify_power_on()
+{
+}
+void gpexbe_smc_notify_power_off()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 }
 #endif

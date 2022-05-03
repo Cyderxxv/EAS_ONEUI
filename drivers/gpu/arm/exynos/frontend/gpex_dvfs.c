@@ -85,7 +85,11 @@ static void gpex_dvfs_context_init(struct device **dev)
 	dvfs.polling_speed = gpexbe_devicetree_get_int(gpu_dvfs_polling_time);
 }
 
+<<<<<<< HEAD
 static int gpu_dvfs_calculate_env_data(void)
+=======
+static int gpu_dvfs_calculate_env_data()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	unsigned long flags;
 	static int polling_period;
@@ -172,12 +176,20 @@ static void gpu_dvfs_timer_control(bool timer_state)
 	spin_unlock_irqrestore(&dvfs.spinlock, flags);
 }
 
+<<<<<<< HEAD
 void gpex_dvfs_start(void)
+=======
+void gpex_dvfs_start()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpu_dvfs_timer_control(true);
 }
 
+<<<<<<< HEAD
 void gpex_dvfs_stop(void)
+=======
+void gpex_dvfs_stop()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpu_dvfs_timer_control(false);
 }
@@ -220,17 +232,29 @@ static int gpu_dvfs_on_off(bool enable)
 	return 0;
 }
 
+<<<<<<< HEAD
 int gpex_dvfs_enable(void)
+=======
+int gpex_dvfs_enable()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return gpu_dvfs_on_off(true);
 }
 
+<<<<<<< HEAD
 int gpex_dvfs_disable(void)
+=======
+int gpex_dvfs_disable()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return gpu_dvfs_on_off(false);
 }
 
+<<<<<<< HEAD
 static int gpu_dvfs_handler_init(void)
+=======
+static int gpu_dvfs_handler_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	if (!dvfs.status)
 		dvfs.status = true;
@@ -243,7 +267,11 @@ static int gpu_dvfs_handler_init(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 static int gpu_dvfs_handler_deinit(void)
+=======
+static int gpu_dvfs_handler_deinit()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	if (dvfs.status)
 		dvfs.status = false;
@@ -254,7 +282,11 @@ static int gpu_dvfs_handler_deinit(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 static int gpu_pm_metrics_init(void)
+=======
+static int gpu_pm_metrics_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	INIT_DELAYED_WORK(&dvfs.dvfs_work, dvfs_callback);
 	dvfs.dvfs_wq = create_workqueue("g3d_dvfs");
@@ -265,7 +297,11 @@ static int gpu_pm_metrics_init(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 static void gpu_pm_metrics_term(void)
+=======
+static void gpu_pm_metrics_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	cancel_delayed_work(&dvfs.dvfs_work);
 	flush_workqueue(dvfs.dvfs_wq);
@@ -293,7 +329,11 @@ int gpex_dvfs_init(struct device **dev)
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpex_dvfs_term(void)
+=======
+void gpex_dvfs_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	/* DVFS stuff */
 	gpu_pm_metrics_term();
@@ -301,7 +341,11 @@ void gpex_dvfs_term(void)
 	dvfs.kbdev = NULL;
 }
 
+<<<<<<< HEAD
 int gpex_dvfs_get_status(void)
+=======
+int gpex_dvfs_get_status()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return dvfs.status;
 }

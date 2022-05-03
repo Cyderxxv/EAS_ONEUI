@@ -46,7 +46,11 @@
 
 static struct exynos_context platform;
 
+<<<<<<< HEAD
 struct exynos_context *gpex_platform_get_context(void)
+=======
+struct exynos_context *gpex_platform_get_context()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return &platform;
 }
@@ -96,7 +100,11 @@ struct exynos_context *gpex_platform_init(struct device **dev)
 	return &platform;
 }
 
+<<<<<<< HEAD
 void gpex_platform_term(void)
+=======
+void gpex_platform_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	runtime_test_runner_term();
 

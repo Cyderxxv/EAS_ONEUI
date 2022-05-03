@@ -18,7 +18,11 @@
  * http://www.gnu.org/licenses/gpl-2.0.html.
  */
 
+<<<<<<< HEAD
 static inline int pmqos_flag_check(mali_pmqos_flags type, mali_pmqos_flags in)
+=======
+static inline pmqos_flag_check(mali_pmqos_flags type, mali_pmqos_flags in)
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return (type & in) == in;
 }

@@ -35,9 +35,15 @@
 
 static char test_buf[PAGE_SIZE];
 
+<<<<<<< HEAD
 static int test_helper_strtoint(int *out)
 {
 	return kstrtoint(test_buf, 10, out);
+=======
+static void test_helper_strtoint(int *out)
+{
+	kstrtoint(test_buf, 10, out);
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 }
 
 static void test_helper_reset_test_buf(void)

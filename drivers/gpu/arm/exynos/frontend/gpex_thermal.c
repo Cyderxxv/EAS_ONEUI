@@ -37,7 +37,11 @@ void gpex_thermal_set_status(bool status)
 	thermal.tmu_enabled = status;
 }
 
+<<<<<<< HEAD
 int gpex_thermal_gpu_normal(void)
+=======
+int gpex_thermal_gpu_normal()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	int ret = 0;
 	ret = gpex_clock_lock_clock(GPU_CLOCK_MAX_UNLOCK, TMU_LOCK, 0);
@@ -149,7 +153,11 @@ static ssize_t show_kernel_sysfs_gpu_temp(char *buf)
 }
 CREATE_SYSFS_KOBJECT_READ_FUNCTION(show_kernel_sysfs_gpu_temp);
 
+<<<<<<< HEAD
 static void gpex_thermal_create_sysfs_file(void)
+=======
+static void gpex_thermal_create_sysfs_file()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	GPEX_UTILS_SYSFS_DEVICE_FILE_ADD(tmu, show_tmu, set_tmu_control);
 	GPEX_UTILS_SYSFS_KOBJECT_FILE_ADD_RO(gpu_tmu, show_kernel_sysfs_gpu_temp);
@@ -158,14 +166,22 @@ static void gpex_thermal_create_sysfs_file(void)
 /***********************************************************************
  * INIT, TERM FUNCTIONS
  ***********************************************************************/
+<<<<<<< HEAD
 int gpex_thermal_init(void)
+=======
+int gpex_thermal_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpex_thermal_create_sysfs_file();
 
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpex_thermal_term(void)
+=======
+void gpex_thermal_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	thermal.tmu_enabled = false;
 

@@ -100,17 +100,29 @@ int gpex_pm_get_status(bool clock_lock)
 }
 
 /* Read the power_status value set by gpex_pm module */
+<<<<<<< HEAD
 int gpex_pm_get_power_status(void)
+=======
+int gpex_pm_get_power_status()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return pm.power_status;
 }
 
+<<<<<<< HEAD
 void gpex_pm_lock(void)
+=======
+void gpex_pm_lock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_pm_access_lock();
 }
 
+<<<<<<< HEAD
 void gpex_pm_unlock(void)
+=======
+void gpex_pm_unlock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_pm_access_unlock();
 }

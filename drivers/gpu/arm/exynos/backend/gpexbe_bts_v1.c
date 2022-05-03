@@ -30,12 +30,20 @@ int gpexbe_bts_set_bts_mo(int val)
 	return 0;
 }
 
+<<<<<<< HEAD
 int gpexbe_bts_init(void)
+=======
+int gpexbe_bts_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpexbe_bts_term(void)
+=======
+void gpexbe_bts_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return;
 }

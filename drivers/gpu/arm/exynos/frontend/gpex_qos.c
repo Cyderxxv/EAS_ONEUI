@@ -117,7 +117,11 @@ int gpex_qos_unset(gpex_qos_flag flags)
 	return 0;
 }
 
+<<<<<<< HEAD
 int gpex_qos_init(void)
+=======
+int gpex_qos_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	int i = 0;
 	gpu_dt *dt = gpexbe_devicetree_get_gpu_dt();
@@ -174,7 +178,11 @@ int gpex_qos_init(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpex_qos_term(void)
+=======
+void gpex_qos_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_qos_request_remove(PMQOS_MIF | PMQOS_LITTLE | PMQOS_MIDDLE | PMQOS_BIG | PMQOS_MIN |
 				  PMQOS_MAX);

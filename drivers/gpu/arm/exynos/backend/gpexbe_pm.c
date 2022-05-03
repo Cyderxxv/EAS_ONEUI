@@ -65,7 +65,11 @@ static struct exynos_pm_domain *gpu_get_pm_domain(const char *g3d_genpd_name)
 	return pd;
 }
 
+<<<<<<< HEAD
 int gpexbe_pm_get_status(void)
+=======
+int gpexbe_pm_get_status()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	int ret = 0;
 	unsigned int val = 0xf;
@@ -76,18 +80,30 @@ int gpexbe_pm_get_status(void)
 
 	return ret;
 }
+<<<<<<< HEAD
 struct exynos_pm_domain *gpexbe_pm_get_exynos_pm_domain(void)
+=======
+struct exynos_pm_domain *gpexbe_pm_get_exynos_pm_domain()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return exynos_pm_domain;
 }
 
+<<<<<<< HEAD
 void gpexbe_pm_access_lock(void)
+=======
+void gpexbe_pm_access_lock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	//DEBUG_ASSERT(exynos_pm_domain)
 	mutex_lock(&exynos_pm_domain->access_lock);
 }
 
+<<<<<<< HEAD
 void gpexbe_pm_access_unlock(void)
+=======
+void gpexbe_pm_access_unlock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	//DEBUG_ASSERT(exynos_pm_domain)
 	mutex_unlock(&exynos_pm_domain->access_lock);
@@ -130,17 +146,29 @@ static int gpexbe_pm_pd_control(int target_status)
 	return 0;
 }
 
+<<<<<<< HEAD
 int gpexbe_pm_pd_control_up(void)
+=======
+int gpexbe_pm_pd_control_up()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return gpexbe_pm_pd_control(1);
 }
 
+<<<<<<< HEAD
 int gpexbe_pm_pd_control_down(void)
+=======
+int gpexbe_pm_pd_control_down()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return gpexbe_pm_pd_control(0);
 }
 
+<<<<<<< HEAD
 int gpexbe_pm_init(void)
+=======
+int gpexbe_pm_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	const char *g3d_genpd_name;
 
@@ -156,7 +184,11 @@ int gpexbe_pm_init(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpexbe_pm_term(void)
+=======
+void gpexbe_pm_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	exynos_pm_domain = NULL;
 }

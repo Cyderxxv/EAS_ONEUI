@@ -46,7 +46,11 @@ void gpexbe_debug_dbg_snapshot_freq_out(int freq_before, int freq_after)
 		dbg_snapshot_freq_misc(dbg_info.dss_freq_id, freq_before, freq_after, DSS_FLAG_OUT);
 }
 
+<<<<<<< HEAD
 int gpexbe_debug_init(void)
+=======
+int gpexbe_debug_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	/* this value is 0 for 9830 */
 	/* TODO: find out what's going on with 9830. dbg snapshot was never used? */
@@ -55,7 +59,11 @@ int gpexbe_debug_init(void)
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpexbe_debug_term(void)
+=======
+void gpexbe_debug_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	dbg_info.dss_freq_id = 0;
 }

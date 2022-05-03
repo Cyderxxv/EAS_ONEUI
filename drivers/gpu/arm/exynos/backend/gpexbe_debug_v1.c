@@ -36,12 +36,20 @@ void gpexbe_debug_dbg_snapshot_freq_out(int freq_before, int freq_after)
 	return;
 }
 
+<<<<<<< HEAD
 int gpexbe_debug_init(void)
+=======
+int gpexbe_debug_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpexbe_debug_term(void)
+=======
+void gpexbe_debug_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return;
 }

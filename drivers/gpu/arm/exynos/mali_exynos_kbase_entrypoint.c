@@ -174,27 +174,47 @@ void mali_exynos_set_thread_priority(struct kbase_context *kctx)
 	gpex_cmar_boost_set_thread_priority(kctx->platform_data);
 }
 
+<<<<<<< HEAD
 void mali_exynos_coherency_reg_map(void)
+=======
+void mali_exynos_coherency_reg_map()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_llc_coherency_reg_map();
 }
 
+<<<<<<< HEAD
 void mali_exynos_coherency_reg_unmap(void)
+=======
+void mali_exynos_coherency_reg_unmap()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_llc_coherency_reg_unmap();
 }
 
+<<<<<<< HEAD
 void mali_exynos_coherency_set_coherency_feature(void)
+=======
+void mali_exynos_coherency_set_coherency_feature()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_llc_coherency_set_coherency_feature();
 }
 
+<<<<<<< HEAD
 void mali_exynos_llc_set_aruser(void)
+=======
+void mali_exynos_llc_set_aruser()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_llc_coherency_set_aruser();
 }
 
+<<<<<<< HEAD
 void mali_exynos_llc_set_awuser(void)
+=======
+void mali_exynos_llc_set_awuser()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpexbe_llc_coherency_set_awuser();
 }

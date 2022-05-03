@@ -25,7 +25,11 @@
 #include <errno.h>
 #include <linux/types.h>
 
+<<<<<<< HEAD
 struct protected_mode_ops *gpexbe_secure_get_protected_mode_ops(void)
+=======
+struct protected_mode_ops *gpexbe_secure_get_protected_mode_ops()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return NULL;
 }

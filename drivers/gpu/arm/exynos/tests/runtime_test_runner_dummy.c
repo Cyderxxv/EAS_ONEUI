@@ -20,11 +20,19 @@
 
 #include <runtime_test_runner.h>
 
+<<<<<<< HEAD
 int runtime_test_runner_init(void)
+=======
+int runtime_test_runner_init()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return 0;
 }
 
+<<<<<<< HEAD
 void runtime_test_runner_term(void)
+=======
+void runtime_test_runner_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 }

@@ -37,6 +37,7 @@
 
 static struct _clock_info clk_info;
 
+<<<<<<< HEAD
 int gpex_clock_get_boot_clock(void)
 {
 	return clk_info.boot_clock;
@@ -62,6 +63,33 @@ int gpex_clock_get_max_lock(void)
 	return clk_info.max_lock;
 }
 int gpex_clock_get_min_lock(void)
+=======
+int gpex_clock_get_boot_clock()
+{
+	return clk_info.boot_clock;
+}
+int gpex_clock_get_max_clock()
+{
+	return clk_info.gpu_max_clock;
+}
+int gpex_clock_get_max_clock_limit()
+{
+	return clk_info.gpu_max_clock_limit;
+}
+int gpex_clock_get_min_clock()
+{
+	return clk_info.gpu_min_clock;
+}
+int gpex_clock_get_cur_clock()
+{
+	return clk_info.cur_clock;
+}
+int gpex_clock_get_max_lock()
+{
+	return clk_info.max_lock;
+}
+int gpex_clock_get_min_lock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return clk_info.min_lock;
 }
@@ -80,7 +108,11 @@ u64 gpex_clock_get_time_busy(int level)
 /*******************************************
  * static helper functions
  ******************************************/
+<<<<<<< HEAD
 static int gpex_clock_update_config_data_from_dt(void)
+=======
+static int gpex_clock_update_config_data_from_dt()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	int ret = 0;
 	struct freq_volt *fv_array;
@@ -328,7 +360,11 @@ int gpex_clock_init(struct device **dev)
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpex_clock_term(void)
+=======
+void gpex_clock_term()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	/* TODO: reset other clk_info variables too */
 	clk_info.kbdev = NULL;
@@ -349,7 +385,11 @@ int gpex_clock_get_table_idx(int clock)
 	return -1;
 }
 
+<<<<<<< HEAD
 int gpex_clock_get_clock_slow(void)
+=======
+int gpex_clock_get_clock_slow()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	return gpexbe_clock_get_rate();
 }
@@ -401,7 +441,11 @@ int gpex_clock_set(int clk)
 	return ret;
 }
 
+<<<<<<< HEAD
 int gpex_clock_prepare_runtime_off(void)
+=======
+int gpex_clock_prepare_runtime_off()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	gpex_clock_update_time_in_state(clk_info.cur_clock);
 
@@ -555,12 +599,20 @@ int gpex_clock_lock_clock(gpex_clock_lock_cmd_t lock_command, gpex_clock_lock_ty
 	return 0;
 }
 
+<<<<<<< HEAD
 void gpex_clock_mutex_lock(void)
+=======
+void gpex_clock_mutex_lock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	mutex_lock(&clk_info.clock_lock);
 }
 
+<<<<<<< HEAD
 void gpex_clock_mutex_unlock(void)
+=======
+void gpex_clock_mutex_unlock()
+>>>>>>> 29cfe22a6a1e... mali/r35p0: Add Samsung changes
 {
 	mutex_unlock(&clk_info.clock_lock);
 }
